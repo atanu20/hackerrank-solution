@@ -1,0 +1,131 @@
+A wise man gave a task to his son. His son is a friend of yours, and he needs your help:
+
+You are given N intervals of the form [s(i), t(i)], where s(i) <= t(i) for all i such that 1 <= i <= N. Now you are given q queries. In each query, you are given an integer k, and you have to determine the number of intervals containing the given value. Therefore, for each query print the number of intervals such that s(i) <= k <= t(i), for i in range [1, N].
+
+Input Format
+
+The first line contains a single integer N, the number of intervals. Next N lines contains two integers s and t, denoting the start and ends of the current interval. Next line contains a single integer q, the number of queries. Finally, each of the next q lines contain a single integer k, the value of the parameter for which the problem is to be solved.
+
+Constraints
+
+1 <= N <= 100000
+
+1 <= q <= 100000
+
+1 <= s <= t <= 100000
+
+1 <= k <= 100000
+
+Output Format
+
+For each of the q queries, print the number of intervals containing the value k for the query. If there are no such intervals print 0.
+
+Sample Input 0
+
+3
+1 3
+6 8
+4 6
+4
+1
+4
+6
+9
+Sample Output 0
+
+1
+1
+2
+0
+
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+   long int n,i,q,j,a,count=0;
+    scanf("%ld",&n);
+    int s[n],t[n];
+    for(i=0;i<n;i++)
+    {
+        scanf("%d %d",&s[i],&t[i]);
+    }
+    
+    scanf("%ld",&q);
+    
+    for( i=0;i<q;i++)
+    {
+        scanf("%ld",&a);
+        count=0;
+        for(j=0;j<n;j++)
+        {
+            if(s[j] <=a &&  a<=t[j])
+            {
+                count=count+1;
+            }
+            
+        }
+        printf("%ld\n",count);
+    }
+    
+    
+    return 0;
+}
+
+
+
+
+
+There are a total of N rooms arranged in a single row side by side numbered from 1 to N. Ravi has to Colour all the rooms with room numbers 1 to K (both inclusive) and Raju has to colour all the rooms with room numbers K+1 to N (both inclusive). Both are given a total of 10 distinct paints, 1 of them being yellow. They have to colour all the rooms such that at least one of the rooms coloured by each one of them is not yellow in colour so that the floor has a minimum of two non-yellow rooms. Given N and K, you have to report the total number of different possible appearances of the floor ie. , total number of different ways in which all the rooms of the floor can be coloured. Assume that there is an infinite amount of each colour given to both of them.
+
+Input Format
+
+The first line comprises of T denoting the number of test cases. The next T lines are such that each line consists of 2 space separated integers N and K.
+
+Constraints
+
+1<=T<=5
+
+2<=N<=100000
+
+1<=K
+
+Output Format
+
+Print a single integer , the answer to each test case on a new line.
+
+Sample Input 0
+
+2
+2 1
+3 2
+Sample Output 0
+
+81
+891
+
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */  
+     long int n;
+    scanf("%ld",&n);
+    while(n--){
+        long int a,b;
+        scanf("%ld %ld",&a,&b);
+        a=a-b;
+        b=pow(10,b)-1;
+        a=pow(10,a)-1;
+        printf("%ld\n",a*b);
+        
+    }
+    return 0;
+}
