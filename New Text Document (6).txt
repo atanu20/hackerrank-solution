@@ -1,3 +1,5 @@
+1. ==
+
 A wise man gave a task to his son. His son is a friend of yours, and he needs your help:
 
 You are given N intervals of the form [s(i), t(i)], where s(i) <= t(i) for all i such that 1 <= i <= N. Now you are given q queries. In each query, you are given an integer k, and you have to determine the number of intervals containing the given value. Therefore, for each query print the number of intervals such that s(i) <= k <= t(i), for i in range [1, N].
@@ -77,7 +79,7 @@ int main() {
 
 
 
-
+2.====
 
 There are a total of N rooms arranged in a single row side by side numbered from 1 to N. Ravi has to Colour all the rooms with room numbers 1 to K (both inclusive) and Raju has to colour all the rooms with room numbers K+1 to N (both inclusive). Both are given a total of 10 distinct paints, 1 of them being yellow. They have to colour all the rooms such that at least one of the rooms coloured by each one of them is not yellow in colour so that the floor has a minimum of two non-yellow rooms. Given N and K, you have to report the total number of different possible appearances of the floor ie. , total number of different ways in which all the rooms of the floor can be coloured. Assume that there is an infinite amount of each colour given to both of them.
 
