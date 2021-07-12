@@ -79,7 +79,7 @@ int main() {
 
 
 
-2.====
+2.====question 2
 
 There are a total of N rooms arranged in a single row side by side numbered from 1 to N. Ravi has to Colour all the rooms with room numbers 1 to K (both inclusive) and Raju has to colour all the rooms with room numbers K+1 to N (both inclusive). Both are given a total of 10 distinct paints, 1 of them being yellow. They have to colour all the rooms such that at least one of the rooms coloured by each one of them is not yellow in colour so that the floor has a minimum of two non-yellow rooms. Given N and K, you have to report the total number of different possible appearances of the floor ie. , total number of different ways in which all the rooms of the floor can be coloured. Assume that there is an infinite amount of each colour given to both of them.
 
